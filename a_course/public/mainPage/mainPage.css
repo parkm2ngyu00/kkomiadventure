@@ -119,10 +119,9 @@ span {
   height: 100%;
 }
 
-/* .slide {
-  max-height: 300px;
-  overflow-y: scroll;
-} */
+.slide {
+  z-index: 1000;
+}
 
 #currentLocation {
   display: flex;
@@ -284,10 +283,9 @@ span {
   transform: translate(-50%, -50%);
   z-index: 1000;
   display: none;
-  width: 80%; 
-  height: 80%; 
+  width: 75%; 
+  height: 75%; 
   border-radius: 8px; 
-  overflow: hidden; 
   background-color: transparent; 
 }
 
