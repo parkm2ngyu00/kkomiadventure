@@ -10,9 +10,9 @@
       "location":["/static/image/mission_location_0_1.jpg"],
       "name":["꼬미","꼬미"],
       "sentence": "아래 세 가지 소리 중 꿩의 소리를 맞춰볼까요?",
-      "sound":["/static/sound/water.mp3","/static/sound/water.mp3","/static/sound/water.mp3"],
+      "sound":["/static/sound/mission_sound_1.mp3","/static/sound/mission_sound_2.mp3","/static/sound/mission_sound_3.mp3"],
       "complete_name":["꼬미","꼬미","꼬미"],
-      "complete_description" :["정답은 무엇이야!","이런식으로 문제를 풀면 초롱이의 꽃잎을 찾을 수 있어!","@, 이제 초롱이의 꽃잎을 찾으러 떠나볼까!?"],
+      "complete_description" :["정답은 1번이야! 2번은 산개구리, 3번은 맹꽁이 소리야.","이런식으로 문제를 풀면 초롱이의 꽃잎을 찾을 수 있어!","@, 이제 초롱이의 꽃잎을 찾으러 떠나볼까!?"],
       "complete_imageUrl" : ["/static/image/complete_0_1.png","/static/image/complete_0_2.png","/static/image/complete_0_3.png"],
       "mission_num":1,
       "last":"False"
