@@ -75,21 +75,22 @@
     </form>
 
     
-    <script>
+    <script>        
         // 이미지 제출 버튼에 이벤트를 바인딩합니다.
-        document.querySelector("#submitButton").addEventListener("click", submitFunc);
-
-        async function submitFunc(event) {
-            event.preventDefault();
-            // 백엔드로 데이터를 POST로 전송합니다.
-            const formData = new FormData(document.querySelector(".file-input"));
-            const getUserId = sessionStorage.getItem('userId');
-            const response = await fetch(`/upload_image/background/${missionNum.innerText}/?userId=${getUserId}`, {
-                method: "POST",
-                body: formData
-            })
-            openNewPopup();
-        }
+        // submitButton.addEventListener("click", submitFunc);
+        // async function submitFunc(event) {
+        //     event.preventDefault();
+        //     if (isSubmit == true) {
+        //         // 백엔드로 데이터를 POST로 전송합니다.
+        //         const formData = new FormData(document.querySelector(".file-input"));
+        //         const getUserId = sessionStorage.getItem('userId');
+        //         const response = await fetch(`/upload_image/background/${missionNum.innerText}/?userId=${getUserId}`, {
+        //             method: "POST",
+        //             body: formData
+        //         })
+        //     }
+        //     openNewPopup();
+        // }
     </script>
 </body>
 </html>
