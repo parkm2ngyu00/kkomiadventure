@@ -19,7 +19,7 @@ apscheduler==3.10.4
 pillow
 python-multipart
 torch==1.13.1
-torchvision
+torchvision==0.10.0
 protobuf==3.20
 ```
 
