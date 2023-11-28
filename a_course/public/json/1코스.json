@@ -15,7 +15,8 @@
       "complete_description" :["정답은 1번이야! 2번은 산개구리, 3번은 맹꽁이 소리야.","이런식으로 문제를 풀면 초롱이의 꽃잎을 찾을 수 있어!","@, 이제 초롱이의 꽃잎을 찾으러 떠나볼까!?"],
       "complete_imageUrl" : ["/static/image/complete_0_1.png","/static/image/complete_0_2.png","/static/image/complete_0_3.png"],
       "mission_num":1,
-      "last":"False"
+      "last":"False",
+      "isSubmitModel":"false"
     },
 
     {
@@ -34,7 +35,8 @@
       "complete_description" :["정답은 '황장금표'야!","@, 첫 번째 꽃잎을 찾았어!", "두번째 꽃잎은 황장목숲길에 있대..!", "황장목길의 맑은 공기를 걸어보며 두 번째 꽃잎을 찾으러 가보자!"],
       "complete_imageUrl" : ["/static/image/complete_1_1.png","/static/image/complete_1_2.png", "/static/image/complete_1_3.png" ,"/static/image/complete_1_4.png"],
       "mission_num":2,
-      "last":"False"
+      "last":"False",
+      "isSubmitModel":"false"
     },
 
     {
@@ -52,7 +54,8 @@
       "complete_description" :["정답은 '보라색'이야!","@, 두 번째 꽃잎을 찾았어!","보라색의 금강초롱꽃 정말 예쁘지 않아?","다음 꽃잎을 찾으러 가보자!"],
       "complete_imageUrl" : ["/static/image/complete_2_1.png","/static/image/complete_2_2.png","/static/image/complete_2_3.png","/static/image/complete_2_4.png"],
       "mission_num":3,
-      "last":"False"
+      "last":"False",
+      "isSubmitModel":"false"
     },
 
     {
@@ -70,7 +73,8 @@
       "complete_description" :["정말 예쁜 풍경 속 사진이잖아!?","@ 여기에도 꽃잎이 있었네!?","예쁜 사진도 찍고 꽃잎도 찾았어!","예쁜 치악산 풍경을 보며 다음 꽃잎을 찾으러 가보자!"],
       "complete_imageUrl" : ["/static/image/complete_3_1.png","/static/image/complete_3_2.png","/static/image/complete_3_3.png","/static/image/complete_3_4.png"],
       "mission_num":4,
-      "last":"False"
+      "last":"False",
+      "isSubmitModel":"true"
     },
 
     {
@@ -88,7 +92,8 @@
       "complete_description" :["우와 진짜 하트 모양이다! 정말 예쁜데?!","어라 여기에도 초롱이의 꽃잎이 있었잖아?!","우와 @! 우리 네 번째 꽃잎까지 찾았어!", "다음 꽃잎은 어디 있을까? 같이 함께 가보자!"],
       "complete_imageUrl" : ["/static/image/complete_4_1.png","/static/image/complete_4_2.png","/static/image/complete_4_3.png","/static/image/complete_4_4.png"],
       "mission_num":5,
-      "last":"False"
+      "last":"False",
+      "isSubmitModel":"false"
     },
 
     {
@@ -106,7 +111,8 @@
       "complete_description" :["@! 너가 찍은 풍경사진 너무 예쁘다~ 구룡사의 아름다움이 그대로 담겨있어!","어라? 구룡사에도 초롱이의 꽃잎이 있었잖아?!","@! 벌써 다섯 번째 꽃잎을 찾았어!","조금 더 힘내서 다음 꽃잎을 찾으러 가볼까?"],
       "complete_imageUrl" : ["/static/image/complete_5_1.png","/static/image/complete_5_2.png","/static/image/complete_5_3.png","/static/image/complete_5_4.png","/static/image/complete_5_5.png"],
       "mission_num":6,
-      "last":"False"
+      "last":"False",
+      "isSubmitModel":"true"
     },
 
     {
@@ -125,7 +131,8 @@
       "complete_description" :["정답은 '공원문화 유산지구'야!","퀴즈를 풀어서 여섯 번째 꽃잎을 찾았어!","다음 꽃잎을 찾으러 가보자!"],
       "complete_imageUrl" : ["/static/image/complete_6_1.png","/static/image/complete_6_2.png","/static/image/complete_6_3.png"],
       "mission_num":7,
-      "last":"False"
+      "last":"False",
+      "isSubmitModel":"false"
     },
 
     {
@@ -144,7 +151,8 @@
       "complete_description" :["정답은 '적악산'이야!","우와 우리 벌써 일곱 번째 꽃잎까지 찾았어!","남은 두개의 꽃잎을 찾으러 가볼까?"],
       "complete_imageUrl" : ["/static/image/complete_7_1.png","/static/image/complete_7_2.png","/static/image/complete_7_3.png"],
       "mission_num":8,
-      "last":"False"
+      "last":"False",
+      "isSubmitModel":"false"
     },
 
     {
@@ -162,7 +170,8 @@
       "complete_description" :["@ 드디어 여덟 번째 꽃잎까지 찾았어!","이제 한 개의 꽃잎만 더 찾으면 모든 꽃잎을 다 찾아 초롱이에게 전해줄 수 있겠다!", "초롱이의 마지막 꽃잎까지 찾으러 가볼까?"],
       "complete_imageUrl" : ["/static/image/complete_8_1.png","/static/image/complete_8_2.png","/static/image/complete_8_3.png"],
       "mission_num":9,
-      "last":"False"
+      "last":"False",
+      "isSubmitModel":"false"
     },
 
     {
@@ -177,6 +186,7 @@
       "sentence": "OOO이 무엇인지 맞춰볼까요?",
       "answer":"치악산 국립공원 야생화원을 OOO길이라고 해요",
       "mission_num":10,
+      "isSubmitModel":"false",
       "last":"True",
       "last_name":["꼬미","꼬미","꼬미","꼬미","초롱이", "초롱이", "초롱이", "모두"],
       "last_description" :["정답은 '솔비로'길이야!", "@, 드디어 모든 꽃잎을 모았어!","너가 없었다면 꽃잎을 다 모으지 못했을거야! @! 나와 함께해줘서 고마워~","초롱아 우리가 꽃잎을 다 찾아왔어!","얘들아 정말 고마워... 너희가 없었다면 난 내년에 예쁜 꽃을 피울 수 없었을거야", "@! 감사의 의미로 너에게 치악산에서의 잊지 못할 추억을 담은 선물을 줄게!", "선물은 아까 미션 중 찍었던 사진이 한국화로 변환된 '숲속필름'이야!", "치악산에서의 아름다운 추억을 잊지말아줘~!"],

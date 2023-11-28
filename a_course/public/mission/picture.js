@@ -4,6 +4,7 @@ const overLay = document.getElementById("overLay");
 const locatonClose = document.getElementById("locatonClose");
 const locationHead = document.getElementById("locationHead");
 const locationImg = document.getElementById("locationImg");
+let isSubmit = "";
 
 locationHead.style.display = "none";
 
@@ -50,6 +51,7 @@ window.onload = function () {
 		document.getElementById("warning").textContent = currentItem.warning;
 		document.getElementById("chooseFile").style.display = "none";
 		document.getElementById("submitButton").style.display = "none";
+		isSubmit = currentItem.isSubmitModel;
 
 		//descriptionBtn의 초기 상태 설정
 		const descriptionBtn = document.getElementById("descriptionBtn");
@@ -315,4 +317,23 @@ prevImageBtn.addEventListener("click", () => {
 function showImage(index) {
 	// 현재 인덱스에 해당하는 이미지 표시
 	locationImg.src = imagePaths[index];
+}
+
+// 이미지 제출 버튼에 이벤트를 바인딩합니다.
+submitButton.addEventListener("click", submitFunc);
+async function submitFunc(event) {
+	event.preventDefault();
+	if (isSubmit == "true") {
+		// 백엔드로 데이터를 POST로 전송합니다.
+		const formData = new FormData(document.querySelector(".file-input"));
+		const getUserId = sessionStorage.getItem("userId");
+		const response = await fetch(
+			`/upload_image/background/${missionNum.innerText}/?userId=${getUserId}`,
+			{
+				method: "POST",
+				body: formData,
+			}
+		);
+	}
+	openNewPopup();
 }
