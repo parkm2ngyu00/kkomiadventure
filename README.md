@@ -18,8 +18,9 @@ opencv-python
 apscheduler==3.10.4
 pillow
 python-multipart
-torch==1.7.1
+torch==1.13.1
 torchvision
+protobuf==3.20
 ```
 
 ## 실행 방법
