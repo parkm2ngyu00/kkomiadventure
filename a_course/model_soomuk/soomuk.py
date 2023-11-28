@@ -42,13 +42,13 @@ g_decoder_cfg = {
     "l_num": 3,
     "l0_c": 64,
     "l0_k": 3,
-    "l0_s": 2,  # --- x2
+    "l0_s": 2,
     "l1_c": 32,
     "l1_k": 3,
-    "l1_s": 2,  # --- x4
+    "l1_s": 2,
     "l2_c": 16,
     "l2_k": 3,
-    "l2_s": 2,  # --- x8
+    "l2_s": 2,
 }
 
 g_skip_conn_cfg = {"l_num": 2}
@@ -162,7 +162,7 @@ def build_generator(inp, name="generator", reuse=tf.compat.v1.AUTO_REUSE):
     return g_state
 
 
-def segment_image(image, k=3):
+def segment_image(image, k=5):
     # 이미지를 NumPy 배열로 변환
     data = np.array(image)
 
@@ -183,7 +183,7 @@ def segment_image(image, k=3):
     return Image.fromarray(segmented_image)
 
 
-def adjust_brightness_dynamic(image, dark_factor=1.5, bright_factor=1):
+def adjust_brightness_dynamic(image, dark_factor=1.5, bright_factor=1.3):
     if image.dtype != np.float32:
         image = image.astype(np.float32)
 
@@ -254,13 +254,12 @@ def soomuk(input_path, output_path):
         cv2.resize(preprocessed_img, (feed_shape_x, feed_shape_y)), axis=0
     )
 
-    # 모델 checkpoint 파일은 수정될 수 있습니다 ..
     model_save = "./a_course/model_soomuk/model_save"
-    tf.reset_default_graph()  # 그래프 초기화
+    tf.compat.v1.reset_default_graph()
 
     gpu_options = tf.compat.v1.GPUOptions(allow_growth=True)
 
-    with tf.device(device), tf.compat.v1.Session(  # 수정 부분
+    with tf.device(device), tf.compat.v1.Session(
         config=tf.compat.v1.ConfigProto(gpu_options=gpu_options)
     ) as sess:
         input_r = tf.compat.v1.placeholder(
@@ -285,4 +284,5 @@ def soomuk(input_path, output_path):
     result_img = cv2.resize(
         result_img, (preprocessed_img.shape[1], preprocessed_img.shape[0])
     )
+
     cv2.imwrite(output_path, result_img)
