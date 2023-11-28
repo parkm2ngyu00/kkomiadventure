@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업창</title>
+    <!-- 한글 타이핑 효과 -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script></head>
+    <link rel="stylesheet" href="/static/mission_complete/last.css">
+    <script type="module" src="/static/mission_complete/last.js" defer></script>
+</head>
+<body>
+    
+    <div class="image-container">
+        <!-- Image -->
+        <img id="image" src="" alt="Displayed Image">
+        <audio id="background" src="/static/sound/background.mp3" loop></audio>
+        <audio id="dubbing" src=""></audio>
+
+        <!-- Description and buttons overlay -->
+        <div id = "descript_bg">
+            <div id="descrip_nametag"></div>
+            <div id="description" style="text-align: left;"></div>
+            
+            <button id="previousDescriptionBtn" class="bounceAnimation">
+                <img src="/static/image/triangle_up.png" width="30px" height="30px" />
+            </button>
+
+            <button id="descriptionBtn" class="bounceAnimation">
+                <img src="/static/image/triangle.png" width="30px" height="30px" />
+            </button>
+            <button id="next" class="scaleAnimation" hidden><a href="/static/benefit/fourcut.html">선물 받기 >></a></button>
+        </div>
+        <p id="copyrigth">본 음성은 KT AI 보이스 스튜디오에서 제작되었습니다.</p>
+
+        <canvas id="imageCanvas" style="display: none;"></canvas> <!-- 화면에 보이지 않게 숨김 -->
+        <img id="resultImage" src="" alt="결과 이미지" style="display:none;">
+
+    </div>
+
+</body>
+</html>

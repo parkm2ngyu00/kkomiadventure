@@ -1,0 +1,349 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'GmarketSansMedium';
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding :0;
+  /* max-width: 375px; */
+}
+
+span {
+  color: black;
+}
+
+/* .slide {
+  position: relative;
+} */
+
+/* #checklistNext {
+  position: absolute;
+  bottom: 30px;
+  right: 0px;
+}
+
+#checklistPrev {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+} */
+
+#info {
+  width: 100%;
+  height: 100%;
+}
+
+#info .back {
+  position: absolute;
+  top: 230px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+#info .next {
+  position: absolute;
+  top:230px;
+  right:0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+#checklist .next {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+#checklist .back {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+#desPrev {
+  position: absolute;
+  top:190px;
+  left:0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+#desNext {
+  position: absolute;
+  top:190px;
+  right:0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  z-index: 1000;
+}
+
+#infoImg {
+  width: 100%;
+  height: 100%;
+}
+
+/* .slide {
+  max-height: 300px;
+  overflow-y: scroll;
+} */
+
+#currentLocation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  bottom: 50px;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  left: 10px;
+}
+
+#map {
+  width: 100%;
+  height: calc(100%);
+  /* position: relative; */
+}
+
+#status_bar{
+  position: absolute; /* ???? ??? */
+  z-index: 1000; /* Leaflet ???? ???? ??? */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  margin : 0;
+  font-weight: 700;
+  padding: 15px 5px;
+  height: 25px;
+  width: 100%;
+}
+
+#userBox { 
+  font-size: 15px;
+  height: 100%;
+  background-color: #F3F2DF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  padding-right: 10px;
+  border-radius: 20px;
+  color: black;
+  margin-right: 10px;
+  border: 2px solid #5A533D;
+}
+
+#user_nickname {
+  font-size: 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: black;
+}
+
+#userState {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#mission_num {
+  font-size: 15px;
+}
+  
+.dropdown {
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  left: -10px;
+  bottom : 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+}
+
+.navBtn {
+  border: none;
+  background: none;
+  margin: 0;
+}
+
+.navBtn:nth-child(2) {
+  margin: 0px -10px;
+}
+
+.navBtn:last-child {
+  margin-left: 5px;
+}
+
+.last {
+  background: none;
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  z-index: 999;
+}
+
+.last span {
+  position: relative;
+  display: block;
+  background-color: orange;
+  padding: 5px;
+  font-size: 13px;
+  border-radius: 10px;
+  margin-top: -15px;
+  z-index: 1000;
+}
+
+#dropdown-btn {
+  background: none;
+  color: inherit;
+  border: none; 
+  padding: 0 5% 0 0;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top : -50px;
+  right : 0px;
+  background-color: rgba(224, 224, 224, 0.5);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+  flex-direction: column;
+  justify-content:center;
+}
+
+/* ?????? ???? ?????? ????? */
+.dropdown-content a{
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+}
+
+/* ?????? ??????? ???�J?? ?��? ?? */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* ?????? ??? ??? ?? ?????? ???? ??? */
+.show {display: inline-flex;}
+
+.popup {
+  position: fixed; /* ???????? ??????�ѿ� ?????? ??????????? ????? ���� ????? */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: none;
+  width: 80%; 
+  height: 80%; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  background-color: transparent; 
+}
+
+.popup img {
+  width: 100%; /* ???��????? ????????? ???�� ����??????? ?????? */
+  height: auto; /* ???��?????? ???????? ??????????? ����??? ����??????? ?????? */
+}
+
+#audio {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+.map-courses {
+  position: absolute; /* ???? ??? */
+  top: 10px; /* ???????????? ??? */
+  right: 10px; 
+  z-index: 1000; /* Leaflet ???? ???? ??? */
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.map-courses button {
+  margin: 0 0 5px 0; /* ??? ???? */
+  padding: 5px 10px; /* ??? ?��? */
+  background: rgba(0,48,100,0.5); /* ???? ???? */
+  border: none; /* ??��? ???? */
+  border-radius: 4px; /* ??? ??? ???? */
+  color: white; /* ????? */
+  cursor: pointer; /* ???�J ��?? */
+  text-align: center;
+  position: relative;
+  width: 80px;
+  height: 30px;
+  /* border: 1px solid rgb(0, 0, 56); */
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  background-color: rgba(0,48,100,0.5);
+  border-radius: 3px;
+}
+
+.map-courses button:active {
+  background-color: #0056b3; 
+}

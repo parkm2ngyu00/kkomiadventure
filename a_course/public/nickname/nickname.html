@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>팝업창</title>
+		<link rel="stylesheet" href="/static/nickname/nickname.css" />
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
+		<main>
+			<div id="image-container">
+				<img
+					id="imageDisplay"
+					src="/static/image/nickname_background.png"
+					alt="Displayed Image"
+				/>
+				<div id="contentBox">
+					<img
+						src="/static/image/ggomi_1.png"
+						alt=""
+						width="185px"
+						height="150px"
+					/>
+					<div id="content">
+						<div id="title">닉네임을 입력해봐!</div>
+						<form class="name-input">
+							<input
+								type="text"
+								id="nameText"
+								name="nameText"
+								style="border: 5px #ffde8a; background: transparent"
+								placeholder="5자 이내로 입력해주세요"
+								required
+							/>
+						</form>
+						<button id="submitButton" onclick="saveNickname(); window.close();">
+							입력완료
+						</button>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+
+	<script>
+		function saveNickname() {
+			var nickname = document.getElementById("nameText").value;
+			if (nickname == "") {
+				alert("닉네임을 입력해주세요.");
+				return;
+			}
+			if (nickname.length > 5) {
+				alert("5자 이내로 입력해주세요.");
+				return;
+			}
+			sessionStorage.setItem("userNickname", nickname);
+			window.location.href = "/static/tutorial/tutorial.html"; // Redirects to practice.html
+		}
+	</script>
+</html>

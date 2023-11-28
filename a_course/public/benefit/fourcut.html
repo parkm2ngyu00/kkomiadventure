@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="fourcut.css" />
+
+		<!-- 한글 타이핑 효과 -->
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="/static/benefit/forcut.js" defer></script>
+		<title>이미지 변환기</title>
+	</head>
+	<body>
+		<button id="backButton">
+			<img src="../image/back.png" alt="" width="30px" height="40px" />
+		</button>
+		<div id="headerBox">
+			<div id="headerDescription">
+				<div id="headerTitle">숲속 필름</div>
+				<p>미션 도중 찍은 풍경사진과 가족사진을</p>
+				<p>수묵화로 변환한 숲속필름입니다</p>
+			</div>
+		</div>
+		<img id="resultImage" src="" alt="결과 이미지" />
+		<div class="buttonBox">
+			<a id="downloadBtn" href="" download="convert_image">다운로드</a>
+			<a id="toForm" href="/static/benefit/imgconvert.html">설문조사</a>
+		</div>
+
+		<script>
+			const imgURL = sessionStorage.getItem("resultImg");
+			const resultImage = document.getElementById("resultImage");
+			const userId = sessionStorage.getItem("userId");
+
+			if (imgURL) {
+				resultImage.src = imgURL;
+				downloadBtn.href = imgURL;
+				resultImage.style.display = "block";
+				downloadBtn.hidden = false;
+			}
+		</script>
+	</body>
+</html>

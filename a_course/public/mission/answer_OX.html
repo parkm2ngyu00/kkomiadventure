@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>팝업창</title>
+
+		<!-- 한글 타이핑 효과 -->
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<link rel="stylesheet" href="/static/mission/mission.css" />
+		<script src="/static/mission/answer_OX.js" defer></script>
+	</head>
+	<body>
+		<button id="backButton">
+			<a href="/practice"
+				><img src="../image/back.png" alt="" width="30px" height="40px"
+			/></a>
+		</button>
+		<button id="missionLocation">
+			<img src="../image/mission_location_1.png" alt="" />
+		</button>
+		<h2 id="missionNum" hidden></h2>
+		<div id="overLay" hidden></div>
+		<div id="locationBox" hidden>
+			<div id="locationHead" hidden>
+				<span>미션장소</span>
+				<button id="locatonClose">X</button>
+			</div>
+			<img
+				src="../image/mission_location_1.jpg"
+				alt=""
+				id="locationImg"
+				width="280px"
+				height="280px"
+				hidden
+			/>
+		</div>
+		<div id="image-container">
+			<div id="title"></div>
+			<img id="image" src="" alt="이미지가 없습니다." />
+			<div id="descriptionBox">
+				<p id="npc-name"></p>
+				<p id="description"></p>
+				<button id="previousDescriptionBtn">
+					<img src="/static/image/triangle_up.png" width="30px" height="30px" />
+				</button>
+
+				<button id="descriptionBtn">
+					<img src="/static/image/triangle.png" width="30px" height="30px" />
+				</button>
+			</div>
+		</div>
+
+		<div class="question-content">
+			<p id="questionDescription"></p>
+		</div>
+
+		<form id="answerForm">
+			<div class="options">
+				<label>
+					<input type="radio" id="one" name="option" value="option1" />O<span
+						class="checkmark"
+					></span>
+				</label>
+				<label>
+					<input type="radio" id="two" name="option" value="option2" />X<span
+						class="checkmark"
+					></span>
+				</label>
+			</div>
+		</form>
+
+		<button id="submitButton">제출하기</button>
+	</body>
+</html>

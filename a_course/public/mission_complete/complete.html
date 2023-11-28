@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>팝업창</title>
+
+		<!-- 한글 타이핑 효과 -->
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<link rel="stylesheet" href="/static/mission_complete/complete.css" />
+		<script src="/static/mission_complete/complete.js" defer></script>
+	</head>
+	<body>
+		<div class="image-container">
+			<!-- Image -->
+			<img id="image" src="" alt="Displayed Image" />
+
+			<!-- Description and buttons overlay -->
+			<div id="descript_bg">
+				<div id="descrip_nametag"></div>
+				<div id="description" style="text-align: left"></div>
+				<button id="previousDescriptionBtn">
+					<img src="/static/image/triangle_up.png" width="30px" height="30px" />
+				</button>
+
+				<button id="descriptionBtn">
+					<img src="/static/image/triangle.png" width="30px" height="30px" />
+				</button>
+			</div>
+
+			<buttion id="next">다음 미션 >></buttion>
+		</div>
+
+		<script></script>
+	</body>
+</html>

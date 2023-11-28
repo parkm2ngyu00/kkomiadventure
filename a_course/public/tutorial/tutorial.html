@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>팝업창</title>
+
+		<!-- 한글 타이핑 효과 -->
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<link rel="stylesheet" href="/static/tutorial/tutorial.css" />
+		<script src="/static/tutorial/tutorial.js" defer></script>
+	</head>
+	<body>
+		<div class="image-container">
+			<audio id="background" src="/static/sound/background.mp3" loop></audio>
+			<audio id="dubbing" src=""></audio>
+
+			<!-- <img id="start" src="/static/image/start.png" alt="Displayed Image" onclick="playAudio()" width="60px" height="60px" />
+			<img id="stop" src="/static/image/stop.png" alt="Displayed Image" onclick="stopAudio()" style="display: none;" width="40px" height="60px"/> -->
+
+			<!-- Image -->
+			<img
+				id="imageDisplay"
+				src="/static/image/tutorial_background_1.png"
+				alt="Displayed Image"
+			/>
+			<!-- Description and buttons overlay -->
+			<div id="descript_bg">
+				<div id="descrip_nametag"></div>
+				<div id="description" style="text-align: left"></div>
+				<button id="previousDescriptionBtn" class="bounceAnimation">
+					<img src="/static/image/triangle_up.png" width="30px" height="30px" />
+				</button>
+
+				<button id="descriptionBtn" class="bounceAnimation">
+					<img src="/static/image/triangle.png" width="30px" height="30px" />
+				</button>
+				<buttion id="next" class="scaleAnimation">미션 시작 >></buttion>
+			</div>
+			<p id="copyrigth">본 음성은 KT AI 보이스 스튜디오에서 제작되었습니다.</p>
+
+			<button id="startButton">건너뛰기 >></button>
+		</div>
+	</body>
+</html>

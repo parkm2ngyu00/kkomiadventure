@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>금강초롱꽃을 구해줘</title>
+
+		<!-- 한글 타이핑 효과 -->
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+		<!-- 모바일 환경 지원 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- jQuery 라이브러리 -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+		<!-- Leaflet 라이브러리 -->
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		/>
+
+		<!-- 메인 CSS -->
+		<link rel="stylesheet" href="/static/mainPage/mainPage.css" />
+	</head>
+
+	<body style="overflow-y: hidden">
+		<div id="map" style="overflow-y: hidden">
+			<div id="status_bar">
+				<div id="userBox">
+					<img
+						id="statusImg"
+						src="/static/image/character_1.png"
+						alt=""
+						height="50px"
+						width="50px"
+					/>
+					<div id="userState">
+						<div id="user_nickname"></div>
+					</div>
+				</div>
+				<div id="userBox">
+					<img
+						id="statusImg"
+						src="/static/image/flower.png"
+						alt=""
+						height="30px"
+						width="30px"
+					/>
+					<div id="userState">
+						<div id="mission_num"></div>
+					</div>
+				</div>
+
+				<div id="audio">
+					<img
+						id="start"
+						src="/static/image/sound.png"
+						alt="Displayed Image"
+						onclick="playAudio()"
+						width="60px"
+						height="60px"
+					/>
+					<audio
+						id="background"
+						src="/static/sound/main_background.mp3"
+						loop
+					></audio>
+				</div>
+			</div>
+			<button id="currentLocation" onclick="getUserLocation()">
+				<img
+					src="/static/image/currentLocation.png"
+					alt=""
+					width="30px"
+					height="30px"
+				/>
+			</button>
+			<div class="dropdown">
+				<button class="navBtn" onclick="showPopup('safe_information')">
+					<img
+						src="/static/image/nav_1.png"
+						alt=""
+						width="75px"
+						height="40px"
+					/>
+				</button>
+				<button class="navBtn" onclick="showPopup('information')">
+					<img
+						src="/static/image/nav_2.png"
+						alt=""
+						width="75px"
+						height="40px"
+					/>
+				</button>
+				<a class="navBtn" href="/static/tutorial/tutorial.html">
+					<img
+						src="/static/image/nav_3.png"
+						alt=""
+						width="75px"
+						height="40px"
+					/>
+				</a>
+			</div>
+		</div>
+
+		<button class="navBtn last" id="navBtnLast">
+			<img src="/static/image/nav_4.png" alt="" width="90px" height="90px" />
+			<span style="width: 70px">AI 화가</span>
+		</button>
+
+		<div id="information" class="popup" style="display: none">
+			<span class="close-btn" onclick="closePopup('information')">✖</span>
+			<div class="slide" id="info" style="overflow-y: scroll">
+				<img src="/static/image/mountain_information1.jpg" />
+				<img src="/static/image/mountain_information2.jpg" />
+
+				<button class="back">❮</button>
+				<button class="next">❯</button>
+			</div>
+		</div>
+
+		<div id="safe_information" class="popup" style="display: none">
+			<div class="slide" id="checklist" style="overflow-y: scroll">
+				<span class="close-btn" onclick="closePopup('safe_information')"
+					>✖</span
+				>
+				<img id="checkListImg" src="/static/image/checklist.png" />
+				<button class="back">❮</button>
+				<button class="next">❯</button>
+			</div>
+		</div>
+
+		<div id="game_information" class="popup" style="display: none">
+			<div class="slide" id="info">
+				<span class="close-btn" onclick="closePopup('game_information')"
+					>✖</span
+				>
+				<img src="/static/image/game_information1.png" />
+				<img src="/static/image/game_information2.png" />
+				<img src="/static/image/game_information3.png" />
+				<button class="back">❮</button>
+				<button class="next">❯</button>
+			</div>
+		</div>
+
+		<script src="/static/main.js" defer></script>
+	</body>
+
+	<script>
+		let num = 0;
+		document.getElementById("start").style.display = "block";
+
+		function playAudio() {
+			num++;
+			var audio = document.getElementById("background");
+			if (num % 2 != 0) {
+				audio.play();
+			} else {
+				audio.pause();
+			}
+		}
+	</script>
+</html>

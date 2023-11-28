@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap');
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'GmarketSansMedium', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#image {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Full screen image container */
+.image-container {
+  position: relative; /* Enables absolute positioning for child elements */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Full screen image */
+#imageDisplay {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure the image covers the entire container */
+}
+
+#start {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#stop {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Description background container */
+#descript_bg {
+  position: absolute;
+  bottom: 22px;
+  background-color: #fff7e2;
+  width: 90%;
+  height: 130px;
+  border-radius: 10px;
+  display: flex;
+  padding-top: 20px;
+  /* align-items: center; */
+  justify-content: flex-start;
+}
+
+/* Name tag within the description background */
+#descrip_nametag {
+  position: absolute;
+  padding: 7px 20px;
+  top: -20px;
+  left: 2px;
+  color: #212529; /* Dark color for text */
+  background-color:#f3a451;
+  border-radius: 50%;
+  font-size: 22px;
+  /* max-width: calc(80%); */
+}
+
+/* Description text */
+#description {
+  color: #212529; /* Dark color for text */
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+/* Button styles */
+/* button {
+  position: absolute;
+  background: rgba(212, 255, 200, 0.5);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 10%;
+} */
+
+@keyframes bounce {
+  0%, 100% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 5px;
+  }
+}
+
+.bounceAnimation {
+  animation: bounce 1s infinite
+}
+
+.scaleAnimation {
+  animation: scaleAnimation 1.5s infinite ease-in-out; /* 크기 변화에 대한 전환 효과를 추가합니다. */
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Positioning previous and next buttons */
+#previousDescriptionBtn {
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  border: none; 
+  background: transparent; 
+  cursor: pointer;
+}
+
+#descriptionBtn {
+  position: absolute;
+  bottom: 0px;
+  right: 5px; 
+  border: none; 
+  background: transparent; 
+  cursor: pointer;
+}
+
+/* Start button at the top right corner */
+#startButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffcd4a;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#next {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffcd4a;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#submitButton {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+}

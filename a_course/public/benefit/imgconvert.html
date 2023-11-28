@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="imgconvert.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<button id="backButton">
+			<img src="../image/back.png" alt="" width="30px" height="40px" />
+		</button>
+		<div id="headerBox">
+			<div id="headerDescription">
+				<div id="headerTitle">나만의 그림을 만들어봐요!</div>
+				<p>화풍을 선택하여 사진 제출후 업로드하면</p>
+				<p>나만의 그림을 저장할 수 있어요!</p>
+			</div>
+		</div>
+		<div id="buttonBox">
+			<button class="button" id="selectPicture">
+				<img
+					src="../image/image_option.png"
+					height="100px"
+					width="100px"
+					alt=""
+				/>
+				<div class="buttonDescription" id="buttonDescription">화풍 선택</div>
+			</button>
+			<div id="dropdown-content" class="dropdown-content" style="display: none">
+				<a href="#select1" class="dropdown-item" id="style1">한국화</a>
+				<a href="#select2" class="dropdown-item" id="style2">만화</a>
+				<a href="#select3" class="dropdown-item" id="style3">캐릭터</a>
+			</div>
+			<label class="button" for="chooseFile">
+				<img
+					src="../image/image_select.png"
+					height="100px"
+					width="100px"
+					alt=""
+				/>
+				<form class="file-input">
+					<input
+						id="chooseFile"
+						type="file"
+						name="file"
+						accept="image/*"
+						hidden
+					/>
+					<div class="buttonDescription" id="imageSelect">이미지 선택</div>
+				</form>
+			</label>
+			<button class="button" id="submitButton">
+				<img
+					src="../image/image_upload.png"
+					height="100px"
+					width="100px"
+					alt=""
+				/>
+				<div class="buttonDescription">이미지 변환</div>
+			</button>
+		</div>
+
+		<div class="infoBox" id="info1" hidden>
+			<div class="infoTitle" id="infoTitle1" hidden></div>
+			<div class="infoDescript" id="infoDescript1" hidden></div>
+		</div>
+
+		<div id="loadingBox" hidden>
+			<img
+				id="delayImg"
+				src="../image/delay_ggomi.GIF"
+				alt=""
+				width="300px"
+				height="300px"
+				hidden
+			/>
+			<div id="text" hidden>사진 변환 중...</div>
+			<div class="indeterminate-progress-bar">
+				<div class="indeterminate-progress-bar__progress"></div>
+			</div>
+		</div>
+		<img id="uploadedImage" src="" alt="업로드된 이미지" hidden />
+		<a id="downloadBtnReal" href="" download="convert image" hidden>다운로드</a>
+		<button id="downloadBtn" hidden>다운로드</button>
+		<script src="imgconvert.js"></script>
+	</body>
+</html>

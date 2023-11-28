@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!--한글 타이핑 효과-->
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<link rel="stylesheet" href="/static/StartPage/start.css" />
+	</head>
+	<body>
+		<button id="tutorialButton">시작하기</button>
+	</body>
+	<script>
+		document
+			.getElementById("tutorialButton")
+			.addEventListener("click", function () {
+				let randomTwoDigitNumber = Math.floor(Math.random() * 90) + 10;
+				const uesrId = new Date().getTime() + randomTwoDigitNumber;
+				sessionStorage.setItem("userId", Number(uesrId));
+				window.location.href = "/static/course/course.html";
+			});
+	</script>
+</html>

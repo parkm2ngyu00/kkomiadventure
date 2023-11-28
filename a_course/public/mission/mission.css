@@ -1,0 +1,620 @@
+/* Google ??? ??? */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap'); */
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'GmarketSansMedium', sans-serif;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff7e2; /* A subtle grey background */
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Add some padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #343a40; /* Dark grey color for headings */
+  font-size: 24px; /* Larger font size for headings */
+  margin-bottom: 20px;
+  text-align: center; /* Center align the headings */
+}
+
+#firstBlur {
+  position: absolute;
+  background-color: gray;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+#firstBlurBtn {
+  position: absolute;
+  background-color: white;
+  color: black;
+  bottom: 5px;
+  right: 15px;
+  font-size: 15px;
+}
+
+#secondBlur {
+  position: absolute;
+  background-color: gray;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+#secondBlurBtn {
+  position: absolute;
+  background-color: white;
+  color: black;
+  bottom: 5px;
+  right: 15px;
+  font-size: 15px;
+}
+
+#thirdBlurBtn {
+  position: absolute;
+  background-color: white;
+  color: black;
+  bottom: 5px;
+  right: 15px;
+  font-size: 15px;
+}
+
+#forthBlurBtn {
+  position: absolute;
+  background-color: white;
+  color: black;
+  bottom: 5px;
+  right: 15px;
+  font-size: 15px;
+}
+
+#thirdBlur {
+  position: absolute;
+  background-color: gray;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+#forthBlur {
+  position: absolute;
+  background-color: gray;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+#fistBlurBox {
+  position: relative;
+  text-align: center;
+  margin-top: 90px;
+  padding: 25px 40px;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+#secondBlurBox {
+  position: relative;
+  text-align: center;
+  margin-top: 90px;
+  padding: 25px 40px;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+#thirdBlurBox {
+  position: relative;
+  text-align: center;
+  margin-top: 170px;
+  padding: 25px 40px;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+#forthBlurBox {
+  position: relative;
+  text-align: center;
+  margin-top: 350px;
+  padding: 25px 40px;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.answer-input input {
+  font-family: 'GmarketSansMedium';
+  background: none;
+}
+
+#backButton {
+  position: absolute;
+  background: none;
+  top: 5px;
+  left: 5px;
+}
+
+#missionLocation {
+  position: absolute;
+  background: none;
+  top: 5px;
+  right: 0px;
+}
+
+#locationBox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 200px;
+  z-index: 1000;
+}
+
+#locationHead {
+  background-color: #F3F2DF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#locationHead span {
+  padding-left: 10px;
+  color: #5A533D;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#locationClose {
+  background: none;
+}
+
+#imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nextImage {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  font-weight: bold;
+  background-color: #F3F2DF;
+}
+
+#prevImage {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  font-weight: bold;
+  background-color: #F3F2DF;
+}
+
+#overLay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  z-index: 999;
+  opacity: 0.8;
+}
+
+#title {
+  text-align: center; 
+  padding: 5px 15px;
+  font-size: 25px;
+  color: white; 
+  background-color: #f3a451;
+  border-radius: 30px;
+  word-wrap: break-word; 
+  box-sizing: border-box; 
+  display: block; 
+  width: 200px;
+  position: absolute;
+  top: -30px;
+  border: 4px solid #eb902d;
+}
+
+
+.popup-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  position: relative;
+  width: 90%; 
+  max-width: 280px; 
+  background: #fff; 
+  padding: 20px; 
+  border-radius: 12px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  align-items: center;
+}
+
+#image-container {
+  position: relative; /* Establishes this container as the positioning context for its children */
+  width: 90%; /* Sets the width to 100% of its parent */
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ggomi_foot {
+  position: absolute;
+  top: -30px;
+  right: 90px;
+  z-index: 999;
+}
+
+#image {
+  width: 100%;
+  height: 400px;
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#npc-name{
+  position: absolute;
+  padding: 7px 20px;
+  top: -45px;
+  left: 0px;
+  color: #212529; /* Dark color for text */
+  background-color:#f3a451;
+  border-radius: 60%;
+  font-size: 20px;
+  /* max-width: calc(80%); */
+}
+
+#descriptionBtn {
+  position: absolute;
+  bottom: -10px;
+  right: 0px; 
+  border: none; 
+  background: transparent; 
+  cursor: pointer;
+}
+
+#previousDescriptionBtn {
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  /* right: 30px;  */
+  border: none; 
+  background: transparent; 
+  cursor: pointer;
+}
+
+#descriptionBox {
+  position: absolute;
+  bottom: 10px;
+  background-color: #fff7e2;
+  width: 90%;
+  height: 130px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#description {
+  color: #212529; /* Dark color for text */
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 0px 10px;
+  padding-bottom: 20px;
+  /* max-width: calc(80%); */
+}
+
+.question-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px; /* Rounded corners */
+  /* background-color: #ffcd4a; */
+  width: 90%;
+}
+
+#questionDescription {
+  color: #508b67;
+  font-size: 20px;
+  padding: 0px 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+#warning {
+  color: #f3a451;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+#answer {  
+  position: relative;
+  background-color: #fbd269;
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+  color: black;
+  font-size: 16px;
+  padding: 10px 8px 10px 12px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.file-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 20px; */
+}
+
+#chooseFile {
+  display: none;
+}
+
+#answerText {
+  border: 4px solid #7db249;
+  height: 50px;
+  font-size: 25px;
+}
+
+#submitButton {
+  padding: 7px 40px; 
+  font-size: 18px; 
+  background-color: #afd485; 
+  transition: background-color 0.2s; 
+  color: #456E2A;
+  border: 1px solid transparent; 
+  border-radius: 10px;
+  border: 4px solid #7db249;
+  margin-top: 10px;
+  width: auto;
+}
+
+button {
+  padding: 10px 15px; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold; 
+}
+
+input[type="file"] + label {
+  background-color: #E4F0D5;
+  color: black; 
+  padding: 10px 40px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+input[type="file"] + label:hover {
+  background-color: #E4F0D5; 
+}
+
+.custom-file-upload {
+  display: block;
+  padding: 6px 20px;
+  cursor: pointer;
+  background-color: #e4f0d5;
+  border-radius: 4px;
+}
+
+
+#answerForm {
+  border-radius: 5px;
+  display : flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #E4F0D5;
+  width: 80vw;
+}
+
+.options label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.options label:nth-child(2) {
+  margin: 15px 0px;
+}
+
+.options input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.options .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.options input[type="radio"]:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.options input[type="radio"]:checked ~ .checkmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background: #7db249;
+}
+
+.options label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.answer-input {
+  margin: 0px 10px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  opacity: 0.8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 70%;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.answer-input label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.answer-input input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.answer-input button {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+input:focus {
+  outline: none;
+}
+
+#sound {
+  width: 100%;
+  padding: 10px;
+}
+
+#soundBox {
+  width: 80%;
+}
+
+.audioBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.audio {
+  margin-left: 20px;
+  width: 60vw;
+}
+
+.audioInput {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+
+[type="radio"] {
+  vertical-align: middle;
+  appearance: none;
+}
+
+[type="radio"] {
+  vertical-align: middle;
+  appearance: none;
+  border: max(2px, 0.1em) solid gray;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: white;
+}
+
+[type="radio"]:checked {
+  border: 0.5em solid #7DB249;
+}
+
+.colorBox {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s ease-in-out;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorBox:first-child {
+  background-color: black;
+}
+
+.colorBox:nth-child(2) {
+  background-color: #7DB249;
+}
+
+.colorBox:nth-child(3) {
+  background-color: #B96BC6;
+}
+
+#colorForm {
+  border-radius: 5px;
+  display : flex;
+  align-items: center;
+  justify-content: space-around;
+  /* padding: 20px 10px; */
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 80vw;
+}
+
+.enlarge {
+  transform: scale(1.2);
+}
