@@ -41,5 +41,27 @@ uvicorn main:app --reload (In the directory containing main.py)
 - 둘레길을 돌며 미션을 수행하는 방식으로, 미션 도중 찍은 사진은 모델을 활용해 이미지 변환
 - 한국화, 만화, 캐릭터 총 3개의 이미지 변환 모델을 탑재해 사용자가 직접 이미지 변환 가능
 
-## 주요 UI
+## 이미지 변환 모델
+### P2GAN (한국화 변환 시 사용)
+<div style="display: flex; justify-content: center;">
+    <img src="images/P2GAN/example1_origin.jpg" alt="P2GAN_example1_origin" width="180" height="180" />
+    <img src="images/P2GAN/example1.jpg" alt="P2GAN_example1" width="180" height="180" />
+    <img src="images/P2GAN/example2_origin.jpg" alt="P2GAN_example2_origin" width="180" height="180" />
+    <img src="images/P2GAN/example2.jpg" alt="P2GAN_example2"width="180" height="180" />
+</div>
 
+### AnimeGANv2 (캐릭터 변환 시 사용)
+<div style="display: flex; justify-content: center;">
+    <img src="images/AnimeGANv2/woman2_origin.jpg" alt="Animeganv2_woman2" width="180" height="180" />
+    <img src="images/AnimeGANv2/woman2.jpg" alt="Animeganv2_woman2"width="180" height="180" />
+    <img src="images/AnimeGANv2/man2_origin.jpg" alt="Animeganv2_man2" width="180" height="180" />
+    <img src="images/AnimeGANv2/man2.jpg" alt="Animeganv2_man2"width="180" height="180" />
+</div>
+
+### Cartoonizer (만화 변환 시 사용)
+<div style="display: flex; justify-content: center;">
+    <img src="images/Cartoonizer/example1_origin.jpg" alt="Cartoonizer_example1_origin" width="180" height="180" />
+    <img src="images/Cartoonizer/example1.jpg" alt="Cartoonizer_example1" width="180" height="180" />
+    <img src="images/Cartoonizer/example2_origin.jpg" alt="Cartoonizer_example2_origin" width="180" height="180" />
+    <img src="images/Cartoonizer/example2.jpg" alt="Cartoonizer_example2"width="180" height="180" />
+</div>
