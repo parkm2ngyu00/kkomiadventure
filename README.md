@@ -47,10 +47,16 @@ uvicorn main:app --reload (In the directory containing main.py)
 - 한국화, 만화, 캐릭터 총 3개의 이미지 변환 모델을 탑재해 사용자가 직접 이미지 변환 가능
 
 ## 페이지 설명
-|닉네임 입력 페이지|튜토리얼 페이지|
+| 닉네임 입력 페이지 | 튜토리얼 페이지 | 메인 지도 페이지 | 미션 페이지 |
+| :-----------------: | :---------------: |:-----------------: | :---------------: |
+|![image](https://github.com/parkm2ngyu00/kkomiadventure_A/assets/80877176/d8f679b3-14bb-4b4b-8283-0c44ee4059ee)|![image](https://github.com/parkm2ngyu00/kkomiadventure_A/assets/80877176/395cc510-6bb8-4a3d-9ceb-9e23744430b4)|![image](https://github.com/parkm2ngyu00/kkomiadventure_A/assets/80877176/478ba132-7d90-4693-a9b4-1e198bd31837)|![image](https://github.com/parkm2ngyu00/kkomiadventure_A/assets/80877176/b9aff47c-fe44-43d7-8383-d2d7ade82791)|
+| 미션 완료 페이지 | 숲속필름 증정 페이지 | AI화가 수묵화 변환 선택 | AI화가 수묵화 변환 |
+|![image](https://github.com/parkm2ngyu00/kkomiadventure_A/assets/80877176/5039363a-660a-4886-be23-f1b0145507d7)|![image](https://github.com/parkm2ngyu00/kkomiadventure_A/assets/80877176/e49e57f7-069d-4f93-a234-4d8bfef07ecc)|![image](https://github.com/parkm2ngyu00/kkomiadventure_A/assets/80877176/1baebb28-b6e3-45ad-b5eb-a7f022cc34ea)|![image](https://github.com/parkm2ngyu00/kkomiadventure_A/assets/80877176/5de7b1ad-ed20-4f64-8064-8b3f815c2eac)|
 
 
 ## 주요 기능
+
+
 
 ## 이미지 변환 모델
 ### P2GAN (한국화 변환 시 사용)
