@@ -22,6 +22,9 @@ torch==1.13.1
 torchvision==0.10.0
 protobuf==3.20
 ```
+```
+pip install -r requirements.txt
+```
 
 ## 실행 방법
 ```
