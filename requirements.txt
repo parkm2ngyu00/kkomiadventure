@@ -6,7 +6,7 @@ opencv-python==4.8.1.78
 apscheduler==3.10.4
 pillow==9.5.0
 python-multipart==0.0.6
-torch==1.13.1
+torch==1.9.0
 torchvision==0.10.0
 protobuf==3.20
 fastapi
