@@ -1,27 +1,12 @@
 # kkomiadventure
 국립공원공단 치악산 대국민 탐방서비스
 
-## 개발환경 (아나콘다)
+## 개발환경 (윈도우, 아나콘다)
 ```
 python==3.7.16
 ```
 
-## 필요 패키지
-```
-tensorflow==1.15
-scikit-learn
-pandas
-numpy==1.19.2
-fastapi
-uvicorn[standard]
-opencv-python
-apscheduler==3.10.4
-pillow
-python-multipart
-torch==1.13.1
-torchvision==0.10.0
-protobuf==3.20
-```
+## 필요 패키지 설치
 ```
 pip install -r requirements.txt
 ```
